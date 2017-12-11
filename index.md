@@ -5,6 +5,7 @@ show-in-menu: false
 primary-section:
   message-text: |-
     Now Open in
+    <br>
     Century City!
   message-color: "#fff"
   button-label: Find a Location
