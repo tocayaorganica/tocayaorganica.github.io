@@ -1,0 +1,31 @@
+<section>
+	<div class="container">
+		<div class="row">
+
+			{% for section in page.secondary-section %}
+
+				<div class="col-lg-6 my-auto">
+
+					<!--card-->
+					<div class="card text-center">
+
+						<!--image-->
+						<img class="card-img-top" src="{{ section.image }}">
+
+						<div class="card-body">
+
+							<!--message-->
+							<p class="card-text">{{ section.message }}</p>
+
+							<!--button-->
+							<a class="btn btn-primary" href="{{ section.button-url }}">{{ section.button-label}}</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			{% endfor %}
+		</div>
+	</div>
+</section>
