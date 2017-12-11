@@ -22,7 +22,10 @@ secondary-section:
   button-label: Join Our Team
   button-url: "/careers.html"
 - image: "/uploads/dining.png"
-  message: Redefining the health-conscious dining experience with bold flavours
+  message: |-
+    Redefining the health-conscious dining
+    <br>
+    experience with bold flavours
   button-label: Learn More
   button-url: "/our-story.html"
 layout: index
