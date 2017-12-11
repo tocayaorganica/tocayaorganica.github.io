@@ -1,6 +1,7 @@
 ---
 title: Playa Vista
 date: 2017-12-11 23:25:00 Z
+position: 4
 is-open: true
 address:
   street: '12150 Millennium Dr #101'
