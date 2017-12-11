@@ -1,7 +1,6 @@
 ---
 title: Home
 position: 0
-navigation-logo: "/uploads/logo-rectangle.png"
 slideshow:
   logo: "/uploads/logo-square.png"
   images:
@@ -32,7 +31,7 @@ secondary-section:
     experience with bold flavours
   button-label: Learn More
   button-url: "/our-story"
-show-in-menu: false
+hide-from-menu: true
 layout: index
 ---
 
