@@ -1,8 +1,8 @@
 ---
 title: Locations
 permalink: "/locations/"
-layout: locations
 position: 1
+layout: locations
 show-in-menu: true
 ---
 
