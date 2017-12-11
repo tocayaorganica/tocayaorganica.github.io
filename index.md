@@ -21,6 +21,10 @@ secondary-section:
     One taco at a time!
   button-label: Join Our Team
   button-url: "/careers.html"
+- image: "/uploads/dining.png"
+  message: 
+  button-label: 
+  button-url: 
 layout: index
 ---
 
