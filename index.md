@@ -8,11 +8,18 @@ primary-section:
     <br>
     Century City!
   message-color: "#fff"
+  image: "/uploads/city.png"
   button-label: Find a Location
   button-text-color: "#b65754"
   button-background-color: "#fff"
-  image: "/uploads/city.png"
-  url: "/locations.html"
+  button-url: "/locations.html"
+secondary-section:
+- message: |-
+    We're changing the world-
+    <br>
+    One taco at a time!
+  button-label: Join Our Team
+  button-url: "/careers.html"
 layout: index
 ---
 
