@@ -1,7 +1,7 @@
 <header>
 	<div class="row h-100">
 
-		<div class="carousel slide" data-ride="carousel">
+		<div class="carousel slide home__carousel" data-ride="carousel">
 			<div class="carousel-inner">
 
 				{% for image in page.slideshow.images %}
@@ -11,9 +11,19 @@
 						<!--slideshow image-->
 						<img class="d-block w-100" src="{{ image }}">
 
-						<!--logo-->
-						<div class="home__carousel__logo carousel-caption mx-auto col-4">
-							<img class="d-block w-100" src="{{ page.slideshow.logo }}">
+						<div class="home__carousel__logo carousel-caption">
+
+							<!--logo-->
+							<div class="row">
+								<div class="col-4 mx-auto">
+									<img class="d-block w-100" src="{{ page.slideshow.logo }}">
+								</div>
+							</div>
+
+							<!--message-->
+							<div class="row">
+								<p class="mx-auto home__carousel__message">{{ page.slideshow.message }}</p>
+							</div>
 						</div>
 
 					</div>
