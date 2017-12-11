@@ -1,6 +1,6 @@
 ---
 title: Home
-position: 1
+position: 0
 slideshow:
   logo: "/uploads/logo-square.png"
   message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
