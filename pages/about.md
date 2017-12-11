@@ -2,7 +2,6 @@
 title: About
 permalink: "/about/"
 position: 2
-show-in-menu: true
 layout: page
 ---
 
