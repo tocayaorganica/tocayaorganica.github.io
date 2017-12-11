@@ -3,9 +3,8 @@ title: Home
 position: 0
 show-in-menu: false
 primary-section:
-  message: |-
+  message-text: |-
     Now Open in
-    <br/>
     Century City!
   message-color: "#fff"
   button-label: Find a Location
