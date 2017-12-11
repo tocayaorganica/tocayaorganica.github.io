@@ -32,16 +32,16 @@
             }
             > a,
             > a:focus {
-                color: $gray-darker;
+                color: $theme-primary;
                 &:hover {
-                    color: $theme-primary;
+                    color: $gray-darker;
                 }
             }
         }
     }
     @media (min-width: 992px) {
-        border-color: transparent;
-        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
         .navbar-brand {
             color: fade(white, 70%);
             &:hover,
@@ -51,9 +51,9 @@
         }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
-            color: fade-out(white, .3);
+            color: $theme-primary;
             &:hover {
-                color: white;
+                color: $gray-darker;
             }
         }
         &.navbar-shrink {
@@ -68,9 +68,9 @@
             }
             .navbar-nav > li > a,
             .navbar-nav > li > a:focus {
-                color: $gray-darker;
+                color: $theme-primary;
                 &:hover {
-                    color: $theme-primary;
+                    color: $gray-darker;
                 }
             }
         }
