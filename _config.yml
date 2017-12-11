@@ -23,15 +23,15 @@ url:
   values:
     is-open: false
     address:
-      street:
-      city:
-      zip:
-    phone-number:
+      street: 
+      city: 
+      zip: 
+    phone-number: 
     hours: []
     special-hours: []
-    postmates-link:
-    uber-eats-link:
-baseurl:
+    postmates-link: 
+    uber-eats-link: 
+baseurl: 
 markdown: kramdown
 plugins:
 - jekyll-feed
