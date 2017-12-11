@@ -3,7 +3,9 @@ title: Home
 position: 0
 show-in-menu: false
 primary-section:
-  message: Now Open in Century City!
+  message: |-
+    Now Open in
+    Century City!
   message-color: "#fff"
   button-label: Find a Location
   button-text-color: "#b65754"
