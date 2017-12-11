@@ -1,7 +1,7 @@
 ---
 title: Locations
 permalink: "/locations/"
-position: 1
+position: 2
 layout: locations
 ---
 
