@@ -1,7 +1,10 @@
 ---
 title: Home
 position: 0
-show-in-menu: false
+slideshow:
+  logo: "/uploads/logo-square.png"
+  images:
+  - "/uploads/dining-header.png"
 primary-section:
   image: "/uploads/city.png"
   message: |-
@@ -28,6 +31,7 @@ secondary-section:
     experience with bold flavours
   button-label: Learn More
   button-url: "/our-story.html"
+show-in-menu: false
 layout: index
 ---
 
