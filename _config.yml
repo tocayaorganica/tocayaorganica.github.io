@@ -11,27 +11,27 @@ collections:
   uploads:
     title: Uploads
     output: true
-navigation-logo: "/uploads/logo-rectangle.png"
-footer-logo: "/uploads/logo-rectangle-light.png"
-description: Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-url:
 - scope:
     path: ''
     type: locations
   values:
     is-open: false
     address:
-      street: 
-      city: 
-      zip: 
-    phone-number: 
+      street:
+      city:
+      zip:
+    phone-number:
     hours: []
     special-hours: []
-    postmates-link: 
-    uber-eats-link: 
-baseurl: 
+    postmates-link:
+    uber-eats-link:
+navigation-logo: "/uploads/logo-rectangle.png"
+footer-logo: "/uploads/logo-rectangle-light.png"
+description: Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+url:
+baseurl:
 markdown: kramdown
 plugins:
 - jekyll-feed
