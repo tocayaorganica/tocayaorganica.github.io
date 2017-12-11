@@ -1,5 +1,5 @@
 ---
-title: South Beach / Miami
+title: South Beach
 date: 2017-12-11 23:21:00 Z
 is-open: true
 address:
