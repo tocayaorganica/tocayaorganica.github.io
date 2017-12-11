@@ -6,6 +6,5 @@ address:
   street: 8720 W. Sunset Blvd.
   city: West Hollywood, CA
   zip: 90069
-abbreviated name: Sunset Plaza
 ---
 
