@@ -1,0 +1,25 @@
+<header>
+	<div class="row h-100">
+
+		<div class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+
+				{% for image in page.slideshow.images %}
+
+					<div class="carousel-item {% if forloop.first %}active{% endif %}">
+
+						<!--slideshow image-->
+						<img class="d-block w-100" src="{{ image }}">
+
+						<!--logo-->
+						<div class="home__carousel__logo carousel-caption mx-auto col-4">
+							<img class="d-block w-100" src="{{ page.slideshow.logo }}">
+						</div>
+
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+
+	</div>
+</header>
