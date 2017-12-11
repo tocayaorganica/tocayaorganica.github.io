@@ -2,7 +2,9 @@
 	<div class="container">
 
 		<!--logo-->
-		<a class="navbar-brand js-scroll-trigger" href="/">{{ site.title }}</a>
+		<a class="navbar-brand" href="/">
+			<img src="{{ site.navigation-logo }}">
+		</a>
 
 		<!--menu button-->
 		<button class="navbar-toggler navbar-toggler-right"
@@ -21,7 +23,7 @@
 			<ul class="navbar-nav ml-auto">
 
 				{% for page in site.pages %}
-					{% if page.show-in-menu %}
+					{% if page.hide-from-menu-list != true %}
 
 						<li class="nav-item">
 							<a class="nav-link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
