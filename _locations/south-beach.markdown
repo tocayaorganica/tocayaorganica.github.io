@@ -1,6 +1,7 @@
 ---
 title: South Beach
 date: 2017-12-11 23:21:00 Z
+position: 2
 is-open: true
 address:
   street: '920 Lincoln Rd. '
