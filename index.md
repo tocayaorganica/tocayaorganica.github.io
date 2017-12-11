@@ -3,7 +3,7 @@ title: Home
 position: 0
 show-in-menu: false
 primary-section:
-  message-text: |-
+  message: |-
     Now Open in
     <br>
     Century City!
