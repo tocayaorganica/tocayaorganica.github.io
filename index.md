@@ -23,14 +23,14 @@ secondary-section:
     <br>
     One taco at a time!
   button-label: Join Our Team
-  button-url: "/careers.html"
+  button-url: "/careers/"
 - image: "/uploads/dining.png"
   message: |-
     Redefining the health-conscious dining
     <br>
     experience with bold flavours
   button-label: Learn More
-  button-url: "/our-story.html"
+  button-url: "/our-story"
 show-in-menu: false
 layout: index
 ---
