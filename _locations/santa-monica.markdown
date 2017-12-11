@@ -1,6 +1,7 @@
 ---
 title: Santa Monica
 date: 2017-12-11 23:24:00 Z
+position: 3
 is-open: true
 address:
   street: 507 Wilshire Blvd
