@@ -15,7 +15,7 @@ primary-section:
   button-label: Find a Location
   button-text-color: "#b65754"
   button-background-color: "#fff"
-  button-url: "/locations.html"
+  button-url: "/locations/"
 secondary-section:
 - image: "/uploads/team.png"
   message: |-
