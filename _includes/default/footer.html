@@ -1,16 +1,58 @@
 <footer>
 	<div class="container">
-		<p>&copy; 2017 {{ site.title }}. All Rights Reserved.</p>
-		<ul class="list-inline">
-			<li class="list-inline-item">
-				<a href="#">Privacy</a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#">Terms</a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#">FAQ</a>
-			</li>
-		</ul>
+		<div class="row">
+
+			<div class="col-4">
+				<!--logo-->
+				<img class="footer__logo" src="{{ site.footer-logo }}">
+
+				<!--trademark-->
+				<p>
+					&copy; {{ 'now' | date: "%Y" }} Tocaya Organica
+					<br/>
+					Brought to you by <a href="http://www.themaderagroup.com/" target="_blank">The Madera Group</a>.
+					<br/>
+					All Rights Reserved.
+				</p>
+			</div>
+
+			<!--open locations-->
+			<div class="col-3">
+				<ul>
+					<li class="footer__list__title">
+						<a href="/locations/">Locations</a>
+					</li>
+
+					{% for location in site.locations %}
+						{% if location.is-open == true %}
+
+							<li class="footer__list__item">{{ location.title }}</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+
+			<!--coming soon locations-->
+			<div class="col-3">
+				<ul>
+					<li class="footer__list__title">
+						<a href="/locations/">Coming Soon</a>
+					</li>
+
+					{% for location in site.locations %}
+						{% if location.is-open != true %}
+
+							<li class="footer__list__item">{{ location.title }}</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+
+			<!--social media-->
+			<div>
+
+			</div>
+
+		</div>
 	</div>
 </footer>
