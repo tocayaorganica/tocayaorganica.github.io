@@ -1,6 +1,7 @@
 ---
 title: Tocaya Organica
 timezone: UTC
+permalink: /:categories/:year/:month/:day/:title
 collections:
   posts:
     title: Posts
