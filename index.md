@@ -1,6 +1,7 @@
 ---
 title: Home
 position: 0
+navigation-logo: "/uploads/logo-rectangle.png"
 slideshow:
   logo: "/uploads/logo-square.png"
   images:
