@@ -31,7 +31,7 @@ secondary-section:
     experience with bold flavours
   button-label: Learn More
   button-url: "/our-story"
-hide-from-menu: true
+hide-from-menu-list: true
 layout: index
 ---
 
