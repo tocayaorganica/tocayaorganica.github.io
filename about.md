@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: "/about/"
+show-in-menu: true
 layout: page
 ---
 
