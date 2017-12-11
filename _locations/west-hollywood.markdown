@@ -1,6 +1,7 @@
 ---
 title: West Hollywood
 date: 2017-12-11 21:51:00 Z
+position: 2
 is-open: true
 address:
   street: 8720 W. Sunset Blvd.
