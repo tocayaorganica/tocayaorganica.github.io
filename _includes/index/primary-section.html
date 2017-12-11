@@ -1,0 +1,25 @@
+<section class="primary-section text-center" style="background-image: url('{{ page.primary-section.image }}');">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+
+				<!--message-->
+				<h2 class="section-heading" style="color: {{ page.primary-section.message-color }};">
+					{{ page.primary-section.message }}
+				</h2>
+
+				<!--button-->
+				<div class="primary-section__button-container">
+					<a class="btn primary-section__button"
+					   href="{{ page.primary-section.url | relative_url }}"
+						style="color: {{ page.primary-section.button-text-color }};
+								 background-color: {{ page.primary-section.button-background-color }};
+								 border-color: {{ page.primary-section.button-background-color }};">
+						{{ page.primary-section.button-label }}
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
