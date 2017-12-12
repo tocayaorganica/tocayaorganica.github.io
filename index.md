@@ -7,7 +7,7 @@ slideshow:
   images:
   - "/uploads/Header.jpg"
 primary-section:
-  image: "/uploads/city.png"
+  image: "/uploads/City.jpg"
   message: |-
     Now Open in
     <br>
@@ -18,14 +18,14 @@ primary-section:
   button-background-color: "#fff"
   button-url: "/locations/"
 secondary-section:
-- image: "/uploads/team.png"
+- image: "/uploads/Team.jpg"
   message: |-
     We're changing the world-
     <br>
     One taco at a time!
   button-label: Join Our Team
   button-url: "/careers/"
-- image: "/uploads/dining.png"
+- image: "/uploads/Dining.jpg"
   message: |-
     Redefining the health-conscious dining
     <br>
