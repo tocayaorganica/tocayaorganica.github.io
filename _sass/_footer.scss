@@ -10,6 +10,7 @@ footer {
   text-align: center;
 
   .footer__col {
+    text-align: left;
     margin-bottom: 2rem;
   }
 
@@ -54,9 +55,9 @@ footer {
     }
   }
 
-  .footer__col__logo {
-    @media (min-width: $screen-md) {
-      text-align: left!important;
+  .footer__col--xs-text-center {
+    @media (max-width: $screen-md) {
+      text-align: center!important;
     }
 
     img.footer__logo {

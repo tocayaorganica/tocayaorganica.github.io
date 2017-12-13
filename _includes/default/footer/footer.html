@@ -3,26 +3,31 @@
 		<div class="row">
 
 			<!--logo and trademark-->
-			<div class="footer__col footer__col__logo col-12 col-md-3">
+			<div class="footer__col footer__col--xs-text-center col-12 col-md-3">
 				<!--logo-->
 				<img class="footer__logo" src="{{ site.footer-logo }}">
 
 				<!--trademark desktop-->
 				<div class="d-none d-md-block mt-md-5 text-left">
-					{% include default/footer-trademark.html %}
+					{% include default/footer/trademark.html %}
 				</div>
 			</div>
 
 			<!--newsletter-->
-			<div class="footer__col col-12 col-md-3">
+			<div class="footer__col footer__col--xs-text-center col-12 col-md-2 pl-md-0 text-left">
 
 				<ul>
 					<li class="footer__list__title">Newsletter</li>
 					<li class="footer__list__item">
-						<div class="col-11 col-md-12 mx-auto">
-							<form>
-								<input class="form-control" placeholder="Your email address...">
-							</form>
+
+						<!--large screen-->
+						<div class="d-none d-md-block">
+							{% include default/footer/newsletter-input.html %}
+						</div>
+
+						<!--small screen-->
+						<div class="d-block d-md-none col-11 mx-auto">
+							{% include default/footer/newsletter-input.html %}
 						</div>
 					</li>
 				</ul>
@@ -30,7 +35,7 @@
 			</div>
 
 			<!--open locations-->
-			<div class="footer__col col-6 col-md-3 text-left">
+			<div class="footer__col col-6 col-md-2 text-left">
 				<ul>
 					<li class="footer__list__title">
 						<a href="/locations/">Locations</a>
@@ -46,7 +51,7 @@
 			</div>
 
 			<!--coming soon locations-->
-			<div class="footer__col col-6 col-md-3 text-left">
+			<div class="footer__col col-6 col-md-2 text-left">
 				<ul>
 					<li class="footer__list__title">
 						<a href="/locations/">Coming Soon</a>
@@ -62,7 +67,7 @@
 			</div>
 
 			<!--social media-->
-			<div class="footer__col col-12 col-sm-6 col-md-4 mx-auto">
+			<div class="footer__col footer__col--xs-text-center col-12 col-sm-6 col-md-3 mx-auto">
 				<ul>
 					<li class="footer__list__title d-none d-md-block">Check Us Out</li>
 					<li class="footer__list__item">
@@ -94,8 +99,8 @@
 			</div>
 
 			<!--trademark mobile-->
-			<div class="footer__col col-12 d-block d-md-none">
-				{% include default/footer-trademark.html %}
+			<div class="footer__col footer__col--xs-text-center col-12 d-block d-md-none">
+				{% include default/footer/trademark.html %}
 			</div>
 
 		</div>
