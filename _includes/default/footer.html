@@ -3,36 +3,34 @@
 		<div class="row">
 
 			<!--logo and trademark-->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+			<div class="footer__col footer__col__logo col-12 col-md-3">
 				<!--logo-->
 				<img class="footer__logo" src="{{ site.footer-logo }}">
 
-				<!--trademark-->
-				<p>
-					&copy; {{ 'now' | date: "%Y" }} Tocaya Organica
-					<br/>
-					Brought to you by <a href="http://www.themaderagroup.com/" target="_blank">The Madera Group</a>.
-					<br/>
-					All Rights Reserved.
-				</p>
+				<!--trademark desktop-->
+				<div class="d-none d-md-block mt-md-5 text-left">
+					{% include default/footer-trademark.html %}
+				</div>
 			</div>
 
 			<!--newsletter-->
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+			<div class="footer__col col-12 col-md-3">
 
 				<ul>
 					<li class="footer__list__title">Newsletter</li>
 					<li class="footer__list__item">
-						<form>
-							<input class="form-control" placeholder="Your email address...">
-						</form>
+						<div class="col-11 col-md-12 mx-auto">
+							<form>
+								<input class="form-control" placeholder="Your email address...">
+							</form>
+						</div>
 					</li>
 				</ul>
 
 			</div>
 
 			<!--open locations-->
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<div class="footer__col col-6 col-md-3 text-left">
 				<ul>
 					<li class="footer__list__title">
 						<a href="/locations/">Locations</a>
@@ -48,7 +46,7 @@
 			</div>
 
 			<!--coming soon locations-->
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+			<div class="footer__col col-6 col-md-3 text-left">
 				<ul>
 					<li class="footer__list__title">
 						<a href="/locations/">Coming Soon</a>
@@ -64,18 +62,40 @@
 			</div>
 
 			<!--social media-->
-			<div>
+			<div class="footer__col col-12 col-sm-6 col-md-4 mx-auto">
 				<ul>
-					<li class="footer__list__title">Check Us Out</li>
+					<li class="footer__list__title d-none d-md-block">Check Us Out</li>
 					<li class="footer__list__item">
+						<div class="d-inline-flex">
 
-						<!--instagram-->
-						<a href="{{ site.instagram-link }}" target="_blank">
-							<i class="fa fa-instagram"></i>
-						</a>
+							<!--instagram-->
+							<div class="col">
+								<a href="{{ site.instagram-link }}" target="_blank">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</div>
 
+							<!--facebook-->
+							<div class="col">
+								<a href="{{ site.facebook-link }}" target="_blank">
+									<i class="fa fa-facebook-square"></i>
+								</a>
+							</div>
+
+							<!--twitter-->
+							<div class="col">
+								<a href="{{ site.facebook-link }}" target="_blank">
+									<i class="fa fa-twitter-square"></i>
+								</a>
+							</div>
+						</div>
 					</li>
 				</ul>
+			</div>
+
+			<!--trademark mobile-->
+			<div class="footer__col col-12 d-block d-md-none">
+				{% include default/footer-trademark.html %}
 			</div>
 
 		</div>

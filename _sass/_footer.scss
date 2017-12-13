@@ -1,42 +1,66 @@
+@import "variables";
+
 // Styling for the footer
 footer {
-    padding: 25px 0;
-    color: white;
-    background-color: $gray-darker;
-    p {
+
+  padding: 25px 0;
+  color: white;
+  background-color: $gray-darker;
+
+  text-align: center;
+
+  .footer__col {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      list-style: none;
+
+      &.footer__list__title {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      &.footer__list__item {
+        font-size: 14px;
+      }
+
+      &.footer__list__item--small {
         font-size: 12px;
-        margin: 0;
-    }
-    ul {
-        margin-bottom: 0;
-        li {
-            list-style: none;
+      }
 
-            &.footer__list__title {
-                margin-bottom: 16px;
-            }
-
-            &.footer__list__item {
-                font-size: 14px;
-            }
-
-            a {
-                color: white;
-                &:hover,
-                &:focus,
-                &:active,
-                &.active {
-                    text-decoration: none;
-                }
-            }
-
-            i.fa {
-                font-size: 3rem;
-            }
+      a {
+        color: white;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          text-decoration: none;
         }
+      }
+
+      i.fa {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .footer__col__logo {
+    @media (min-width: $screen-md) {
+      text-align: left!important;
     }
 
     img.footer__logo {
-        height: 40px;
+      height: 50px;
     }
+  }
 }
