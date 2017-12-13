@@ -12,11 +12,8 @@ primary-section:
     Now Open in
     <br>
     Century City!
-  message-color: "#fff"
   button-label: Find a Location
-  button-text-color: "#b65754"
-  button-background-color: "#fff"
-  button-url: "/locations/"
+  button-link: "/locations/"
 secondary-section:
 - image: "/uploads/Team.jpg"
   message: |-
@@ -24,14 +21,14 @@ secondary-section:
     <br>
     One taco at a time!
   button-label: Join Our Team
-  button-url: "/careers/"
+  button-link: "/careers/"
 - image: "/uploads/Dining.jpg"
   message: |-
     Redefining the health-conscious dining
     <br>
     experience with bold flavours
   button-label: Learn More
-  button-url: "/our-story"
+  button-link: "/our-story"
 hide-from-menu-list: true
 layout: index
 ---
