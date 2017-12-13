@@ -38,4 +38,3 @@ baseurl:
 markdown: kramdown
 plugins:
 - jekyll-feed
-test: test2
