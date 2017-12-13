@@ -1,4 +1,10 @@
+@import "card-dropshadows";
+
 @import "../variables";
+
+body {
+  background-color: $seashell;
+}
 
 .btn-primary {
   color: white!important;
