@@ -6,8 +6,11 @@ slideshow:
   message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
   images:
   - "/uploads/Header.jpg"
+  mobile-images:
+  - "/uploads/header-mobile.jpg"
 sections:
 - image: "/uploads/City.jpg"
+  mobile-image: "/uploads/City.jpg"
   message: |-
     Now Open in
     <br>
@@ -15,6 +18,7 @@ sections:
   button-label: Find a Location
   button-link: "/locations/"
 - image: "/uploads/Team.jpg"
+  mobile-image: "/uploads/team-mobile.jpg"
   message: |-
     We're changing the world-
     <br>
@@ -22,6 +26,7 @@ sections:
   button-label: Join Our Team
   button-link: "/careers/"
 - image: "/uploads/Dining.jpg"
+  mobile-image: "/uploads/menu-mobile.jpg"
   message: |-
     Redefining the health-conscious dining
     <br>
