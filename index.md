@@ -6,15 +6,14 @@ slideshow:
   message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
   images:
   - "/uploads/Header.jpg"
-primary-section:
-  image: "/uploads/City.jpg"
+sections:
+- image: "/uploads/City.jpg"
   message: |-
     Now Open in
     <br>
     Century City!
   button-label: Find a Location
   button-link: "/locations/"
-secondary-section:
 - image: "/uploads/Team.jpg"
   message: |-
     We're changing the world-
