@@ -17,14 +17,6 @@ sections:
     Century City!
   button-label: Find a Location
   button-link: "/locations/"
-- image: "/uploads/Team.jpg"
-  mobile-image: "/uploads/team-mobile.jpg"
-  message: |-
-    We're changing the world-
-    <br>
-    One taco at a time!
-  button-label: Join Our Team
-  button-link: "/careers/"
 - image: "/uploads/Dining.jpg"
   mobile-image: "/uploads/menu-mobile.jpg"
   message: |-
@@ -33,6 +25,14 @@ sections:
     experience with bold flavours
   button-label: Learn More
   button-link: "/our-story"
+- image: "/uploads/Team.jpg"
+  mobile-image: "/uploads/team-mobile.jpg"
+  message: |-
+    We're changing the world-
+    <br>
+    One taco at a time!
+  button-label: Join Our Team
+  button-link: "/careers/"
 hide-from-menu-list: true
 layout: index
 ---
