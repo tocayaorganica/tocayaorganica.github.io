@@ -23,8 +23,8 @@ sections:
     Redefining the health-conscious dining
     <br>
     experience with bold flavours
-  button-label: Learn More
-  button-link: "/our-story"
+  button-label: Explore the Menu
+  button-link: "/menu"
 - image: "/uploads/Team.jpg"
   mobile-image: "/uploads/team-mobile.jpg"
   message: |-
