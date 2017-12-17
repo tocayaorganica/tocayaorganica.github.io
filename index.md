@@ -33,7 +33,7 @@ sections:
     One taco at a time!
   button-label: Join Our Team
   button-link: "/careers/"
-  is-white-button: true
+  button-white: true
 hide-from-menu-list: true
 layout: index
 ---
