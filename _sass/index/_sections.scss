@@ -1,5 +1,10 @@
 @import "../variables";
 
+section.mobile-section .carousel-caption {
+  top: 0;
+  bottom: unset;
+}
+
 section.primary-section {
 
   background-size: cover;
@@ -9,29 +14,14 @@ section.primary-section {
   padding: 150px 0;
 
   h2 {
-    font-size: 30px;
+    font-size: 70px;
     margin-top: 0;
   }
 
   .primary-section__button {
 
-    display: block;
-    margin-bottom: 25px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    @media(min-width: $screen-md) {
-      display: inline-block;
-      margin-bottom: 0;
-    }
-  }
-
-  @media(min-width: $screen-md) {
-    h2 {
-      font-size: 70px;
-    }
+    display: inline-block;
+    margin-bottom: 0;
   }
 }
 

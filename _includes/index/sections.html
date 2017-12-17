@@ -25,9 +25,25 @@
 
 <!--mobile-->
 {% for section in page.sections %}
-	<section class="d-block d-md-none primary-section text-center"
-	         style="background-image: url('{{ section.mobile-image }}');">
+	<section class="d-block d-md-none p-0 mobile-section">
+		<div class="carousel-item active">
 
-		{% include index/section-contents.html %}
+			<!--slideshow image-->
+			<img class="d-block w-100" src="{{ section.mobile-image }}">
+
+			<div class="carousel-caption h-100 p-0 d-flex flex-column justify-content-around">
+
+				<!--message-->
+				<div>
+					<h3>{{ section.message }}</h3>
+				</div>
+
+				<!--button-->
+				<div>
+					{% include index/section-button.html %}
+				</div>
+			</div>
+
+		</div>
 	</section>
 {% endfor %}
