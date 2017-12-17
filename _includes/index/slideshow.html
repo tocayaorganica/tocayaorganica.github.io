@@ -1,32 +1,22 @@
 <header>
 	<div class="row h-100">
 
-		<div class="carousel slide home__carousel" data-ride="carousel">
+		<!--desktop-->
+		<div class="carousel slide home__carousel d-none d-md-block " data-ride="carousel">
 			<div class="carousel-inner">
-
 				{% for image in page.slideshow.images %}
 
-					<div class="carousel-item {% if forloop.first %}active{% endif %}">
+					{% include index/slideshow-item.html %}
+				{% endfor %}
+			</div>
+		</div>
 
-						<!--slideshow image-->
-						<img class="d-block w-100" src="{{ image }}">
+		<!--mobile-->
+		<div class="carousel slide home__carousel d-block d-md-none" data-ride="carousel">
+			<div class="carousel-inner">
+				{% for image in page.slideshow.mobile-images %}
 
-						<div class="home__carousel__logo carousel-caption">
-
-							<!--logo-->
-							<div class="row">
-								<div class="col-4 mx-auto">
-									<img class="d-block w-100" src="{{ page.slideshow.logo }}">
-								</div>
-							</div>
-
-							<!--message-->
-							<div class="row">
-								<p class="mx-auto home__carousel__message">{{ page.slideshow.message }}</p>
-							</div>
-						</div>
-
-					</div>
+					{% include index/slideshow-item-mobile.html %}
 				{% endfor %}
 			</div>
 		</div>

@@ -1,0 +1,23 @@
+<div class="carousel-item {% if forloop.first %}active{% endif %}">
+
+	<!--slideshow image-->
+	<img class="d-block w-100" src="{{ image }}">
+
+	<div class="home__carousel__logo carousel-caption">
+
+		<!--logo-->
+		<div class="row">
+			<div class="col-12 mx-auto">
+				<img class="d-block w-100" src="{{ page.slideshow.mobile-logo }}">
+			</div>
+		</div>
+
+		<!--order online button-->
+		<div class="row mt-5">
+			<div class="mx-auto mt-5">
+				{% include default/order-online-button.html %}
+			</div>
+		</div>
+	</div>
+
+</div>

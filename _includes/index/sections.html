@@ -1,0 +1,33 @@
+<!--desktop-->
+<!--first section is presented the same as mobile-->
+{% assign section = page.sections | first %}
+<section class="d-none d-md-block primary-section text-center"
+         style="background-image: url('{{ section.image }}');">
+
+	{% include index/section-contents.html %}
+</section>
+
+<!--remaining sections are shown as cards-->
+<section class="d-none d-md-block card-section">
+	<div class="container">
+		<div class="row">
+			{% for section in page.sections %}
+
+				{% if forloop.first != true %}
+
+					{% include index/section-contents-card.html %}
+
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<!--mobile-->
+{% for section in page.sections %}
+	<section class="d-block d-md-none primary-section text-center"
+	         style="background-image: url('{{ section.mobile-image }}');">
+
+		{% include index/section-contents.html %}
+	</section>
+{% endfor %}
