@@ -1,9 +1,15 @@
 // Styling for the navbar
-#mainNav {
-    border-color: fade-out($gray-darker, .95);
-    background-color: white;
+#mainNav.navbar {
+
+    padding: 0; // default: padding: .5rem 1rem;
+
+    // mobile navbar color
+    border-color: transparent;
+    background-color: transparent;
+
     @include transition-all;
     @include heading-font;
+
     .navbar-brand {
         color: $theme-primary;
         @include heading-font;
@@ -16,11 +22,30 @@
             height: 30px;
         }
     }
+
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
-        color: $gray-darker;
+        color: white;
+        border-color: white;
+
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+
+        &[aria-expanded="true"] {
+            color: black;
+            background-color: white;
+        }
     }
+
+    .navbar-collapse {
+        padding: 0 1rem .5rem;
+
+        &.collapse.show, &.collapsing {
+            background-color: white;
+        }
+    }
+
     .navbar-nav {
         > li {
             > a {
@@ -43,6 +68,7 @@
             }
         }
     }
+
     @media (min-width: 992px) {
         border-color: rgba(255, 255, 255, 0.7);
         background-color: rgba(255, 255, 255, 0.7);
