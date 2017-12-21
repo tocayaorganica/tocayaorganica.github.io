@@ -8,7 +8,7 @@ slideshow:
   - "/uploads/Header.jpg"
   mobile-logo: "/uploads/logo-rectangle-light.png"
   mobile-images:
-  - "/uploads/header-mobile.jpg"
+  - "/uploads/HeaderDarker.jpg"
 sections:
 - image: "/uploads/City.jpg"
   mobile-image: "/uploads/City.jpg"
@@ -27,7 +27,7 @@ sections:
   button-label: Explore the Menu
   button-link: "/menu"
 - image: "/uploads/Team.jpg"
-  mobile-image: "/uploads/team-mobile.jpg"
+  mobile-image: "/uploads/Team-b1da38.jpg"
   message: |-
     We're changing the world-
     <br>
