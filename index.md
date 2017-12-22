@@ -35,7 +35,6 @@ sections:
   button-label: Join Our Team
   button-link: "/careers/"
   button-white: true
-hide-from-menu-list: true
 layout: index
 ---
 
