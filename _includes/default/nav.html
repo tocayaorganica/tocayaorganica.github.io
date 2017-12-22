@@ -7,18 +7,20 @@
 		</a>
 
 		<!--menu button-->
-		<button class="navbar-toggler navbar-toggler-left"
-		        type="button"
-		        data-toggle="collapse"
-		        data-target="#navbarResponsive"
-		        aria-controls="navbarResponsive"
-		        aria-expanded="false"
-		        aria-label="Toggle navigation">
-			<i class="fa fa-bars"></i>
-		</button>
+		<div class="d-block d-lg-none navbar-event-receiver no-collapse w-100">
+			<button class="navbar-toggler navbar-toggler-left"
+			        type="button"
+			        data-toggle="collapse"
+			        data-target=".navbar-event-receiver"
+			        aria-controls="navbarResponsive"
+			        aria-expanded="false"
+			        aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+		</div>
 
 		<!--menu items-->
-		<div class="collapse navbar-collapse" id="navbarResponsive">
+		<div class="navbar-event-receiver collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 
 				{% assign sorted-pages = (site.pages | sort: 'position') %}

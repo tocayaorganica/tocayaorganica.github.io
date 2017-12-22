@@ -23,18 +23,43 @@
         }
     }
 
+    .navbar-event-receiver.collapse.no-collapse {
+        display: block;
+
+        &.show {
+            background-color: white;
+        }
+    }
+
+    .navbar-event-receiver.collapsing.no-collapse {
+        background-color: white;
+        height: 100%;
+        overflow: unset;
+        position: static;
+
+        .navbar-toggler {
+            &[aria-expanded="true"] {
+                color: black;
+                border-color: black;
+            }
+        }
+    }
+
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
         color: white;
         border-color: white;
 
+        transition: all .35s ease;
+        transition-property: color, border-color;
+
         margin-top: 0.5rem;
         margin-left: 1rem;
 
         &[aria-expanded="true"] {
             color: black;
-            background-color: white;
+            border-color: black;
         }
     }
 
