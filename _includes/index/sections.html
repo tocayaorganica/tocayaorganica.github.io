@@ -1,10 +1,13 @@
 <!--desktop-->
 <!--first section is presented the same as mobile-->
 {% assign section = page.sections | first %}
-<section class="d-none d-md-block primary-section text-center"
-         style="background-image: url('{{ section.image }}');">
+<section class="d-none d-md-block primary-section text-center parallax-window"
+         data-parallax="scroll"
+         data-image-src="{{ section.image }}">
 
-	{% include index/section-contents.html %}
+		{% include index/section-contents.html %}
+	</div>
+
 </section>
 
 <!--remaining sections are shown as cards-->
