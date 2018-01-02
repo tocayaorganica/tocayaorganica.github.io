@@ -6,9 +6,9 @@
 		var scrollReveal = ScrollReveal();
 		scrollReveal.reveal("[data-scroll-reveal]",
 		 {
-		 	delay: 200,
-			duration: 600
-			// distance: "5rem"
+		 	// delay: 200,
+			duration: 600,
+			distance: "5rem"
 		 });
 
 	});
