@@ -18,6 +18,7 @@ sections:
     Century City!
   button-label: Find a Location
   button-link: "/locations/"
+  mobile-bottom-color: "#865a5e"
 - image: "/uploads/Dining.jpg"
   mobile-image: "/uploads/menu-mobile.jpg"
   message: |-
@@ -35,6 +36,7 @@ sections:
   button-label: Join Our Team
   button-link: "/careers/"
   button-white: true
+  mobile-bottom-color: "#1c9a70"
 layout: index
 ---
 
