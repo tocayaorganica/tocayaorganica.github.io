@@ -3,7 +3,7 @@
 @import "../variables";
 
 // scroll reveal
-[data-scroll-reveal] {
+[data-scroll-reveal], .data-scroll-reveal-clean {
   visibility: hidden;
 }
 
