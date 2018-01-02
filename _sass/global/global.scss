@@ -2,6 +2,11 @@
 
 @import "../variables";
 
+// scroll reveal
+[data-scroll-reveal] {
+  visibility: hidden;
+}
+
 body {
   background-color: $seashell;
 }
