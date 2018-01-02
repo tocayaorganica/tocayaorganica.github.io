@@ -8,7 +8,8 @@
 		 {
 		 	// delay: 200,
 			duration: 600,
-			distance: "5rem"
+			scale: .3,
+			distance: "0px"
 		 });
 
 	});
