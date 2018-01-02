@@ -9,10 +9,7 @@
 		 	// delay: 200,
 			duration: 600,
 			scale: .3,
-			distance: "0px",
-			 beforeReveal: function (domEl) {
-				$(domEl).removeClass("data-scroll-reveal-clean");
-			 }
+			distance: "0px"
 		 });
 
 	});
