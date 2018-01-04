@@ -24,7 +24,7 @@ sections:
   message: |-
     Redefining the health-conscious dining
     <br>
-    experience with bold flavours
+    experience with bold flavors
   button-label: Explore the Menu
   button-link: "/menu"
 - image: "/uploads/Team.jpg"
