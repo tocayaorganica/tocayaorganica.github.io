@@ -2,14 +2,16 @@
 title: Home
 position: 0
 slideshow:
-  logo: "/uploads/logo-square.png"
+- slide-image: "/uploads/Header.jpg"
+  mobile-slide-image: "/uploads/HeaderDarker.jpg"
   message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
-  images:
-  - "/uploads/Header.jpg"
-  - "/uploads/tocayaSalad.jpeg"
-  mobile-logo: "/uploads/logo-rectangle-light.png"
-  mobile-images:
-  - "/uploads/HeaderDarker.jpg"
+  message-image: "/uploads/logo-square.png"
+  mobile-message-image: "/uploads/logo-rectangle-light.png"
+- message: 
+  slide-image: "/uploads/tocayaSalad.jpeg"
+  mobile-slide-image: 
+  message-image: 
+  mobile-message-image: 
 sections:
 - image: "/uploads/City.jpg"
   mobile-image: "/uploads/City.jpg"
