@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .home__carousel {
   background-color: black;
 }
@@ -10,6 +12,8 @@
     text-shadow: 1px 1px black;
 
     &.home__carousel__message--large {
+
+      @include alt-font-2;
       font-size: 4rem;
     }
   }

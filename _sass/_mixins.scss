@@ -77,3 +77,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+@mixin alt-font-2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
