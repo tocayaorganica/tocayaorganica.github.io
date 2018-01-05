@@ -22,7 +22,11 @@
 				{% else %}
 					home__carousel__message--large
 				{% endif %}
-				">{{ slide.message }}</p>
+				"
+			   {% if forloop.first %}
+			      data-scroll-reveal
+			   {% endif %}
+				>{{ slide.message }}</p>
 		</div>
 
 	</div>
