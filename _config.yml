@@ -31,6 +31,7 @@ footer-logo: "/uploads/logo-rectangle-light.png"
 instagram-link: https://www.instagram.com/tocayaorganica/
 facebook-link: https://www.facebook.com/TocayaOrganica/
 twitter-link: https://twitter.com/tocayaorganica/
+favicon-image: "/uploads/favicon.png"
 description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search
   results) and in your feed.xml site description.
