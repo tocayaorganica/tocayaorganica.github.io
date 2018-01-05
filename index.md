@@ -23,7 +23,7 @@ sections:
     Century City!
   button-label: Find a Location
   button-link: "/locations/"
-  mobile-bottom-color: "#f89568"
+  mobile-bottom-color: "#f87d68"
 - image: "/uploads/Dining.jpg"
   mobile-image: "/uploads/menu-mobile.jpg"
   message: |-
