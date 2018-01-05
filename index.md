@@ -7,7 +7,7 @@ slideshow:
   message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
   message-image: "/uploads/logo-square.png"
   mobile-message-image: "/uploads/logo-rectangle-light.png"
-- message: 
+- message: Salads are good
   slide-image: "/uploads/tocayaSalad.jpeg"
   mobile-slide-image: "/uploads/tocayaSalad.jpeg"
   message-image: 
