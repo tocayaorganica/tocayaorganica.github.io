@@ -14,14 +14,14 @@ slideshow:
   mobile-message-image: 
 sections:
 - image: "/uploads/City.jpg"
-  mobile-image: "/uploads/City.jpg"
+  mobile-image: "/uploads/City-2ed860.jpg"
   message: |-
     Now Open in
     <br>
     Century City!
   button-label: Find a Location
   button-link: "/locations/"
-  mobile-bottom-color: "#865a5e"
+  mobile-bottom-color: "#f89568"
 - image: "/uploads/Dining.jpg"
   mobile-image: "/uploads/menu-mobile.jpg"
   message: |-
