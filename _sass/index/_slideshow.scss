@@ -8,5 +8,9 @@
 
   .home__carousel__message {
     text-shadow: 1px 1px black;
+
+    &.home__carousel__message--large {
+      font-size: 4rem;
+    }
   }
 }

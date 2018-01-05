@@ -1,20 +1,42 @@
 <div class="carousel-item {% if forloop.first %}active{% endif %}">
 
 	<!--slideshow image-->
-	<img class="d-block w-100" src="{{ image }}">
+	<img class="d-none d-md-block w-100" src="{{ slide.slide-image }}">
+	<img class="d-block d-md-none w-100" src="{{ slide.mobile-slide-image }}">
 
 	<div class="home__carousel__logo carousel-caption">
 
-		<!--logo-->
+		<!--foreground image-->
 		<div class="row">
-			<div class="col-4 mx-auto">
-				<img class="d-block w-100" src="{{ page.slideshow.logo }}">
+			<div class="col-12 col-md-4 mx-auto">
+
+				<!--desktop-->
+				{% if slide.message-image %}
+					<img class="d-none d-md-block w-100" src="{{ slide.message-image }}">
+				{% endif %}
+
+				<!--mobile-->
+				{% if slide.mobile-message-image %}
+					<img class="d-block d-md-none w-100" src="{{ slide.mobile-message-image }}">
+				{% endif %}
 			</div>
 		</div>
 
-		<!--message-->
-		<div class="row">
-			<p class="mx-auto home__carousel__message">{{ page.slideshow.message }}</p>
+		<!--message (desktop)-->
+		<div class="d-none d-md-block row">
+			<p class="mx-auto home__carousel__message
+				{% if slide.message-image %}
+				{% else %}
+					home__carousel__message--large
+				{% endif %}
+				">{{ slide.message }}</p>
+		</div>
+
+		<!--order online button (mobile)-->
+		<div class="d-block d-md-none row mt-5">
+			<div class="mx-auto mt-5">
+				{% include default/order-online-button.html %}
+			</div>
 		</div>
 	</div>
 

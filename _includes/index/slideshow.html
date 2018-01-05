@@ -1,22 +1,18 @@
 <header>
 	<div class="w-100 h-100">
 
-		<!--desktop-->
-		<div class="carousel slide home__carousel d-none d-md-block " data-ride="carousel">
+		<!--slideshow-->
+		<div class="carousel slide home__carousel"
+		     data-ride="carousel"
+		     data-interval="4000"
+		     data-wrap="true"
+		     data-keyboard="false"
+		     data-pause="false">
+
 			<div class="carousel-inner">
-				{% for image in page.slideshow.images %}
+				{% for slide in page.slideshow %}
 
 					{% include index/slideshow-item.html %}
-				{% endfor %}
-			</div>
-		</div>
-
-		<!--mobile-->
-		<div class="carousel slide home__carousel d-block d-md-none" data-ride="carousel">
-			<div class="carousel-inner">
-				{% for image in page.slideshow.mobile-images %}
-
-					{% include index/slideshow-item-mobile.html %}
 				{% endfor %}
 			</div>
 		</div>
