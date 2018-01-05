@@ -9,7 +9,7 @@ slideshow:
   mobile-message-image: "/uploads/logo-rectangle-light.png"
 - message: 
   slide-image: "/uploads/tocayaSalad.jpeg"
-  mobile-slide-image: 
+  mobile-slide-image: "/uploads/tocayaSalad.jpeg"
   message-image: 
   mobile-message-image: 
 sections:
