@@ -2,15 +2,15 @@
 title: Home
 position: 0
 slideshow:
-- slide-image: "/uploads/Header.jpg"
-  message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
-  message-image: "/uploads/logo-square.png"
 - message: |-
     TRY OUR NEW
     <br>
     TACO SALAD
   slide-image: "/uploads/tocayaSaladDarker.jpg"
   message-image: 
+- slide-image: "/uploads/Header.jpg"
+  message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
+  message-image: "/uploads/logo-square.png"
 mobile-header:
   background-image: "/uploads/HeaderDarker.jpg"
   foreground-image: "/uploads/logo-rectangle-light.png"
