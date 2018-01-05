@@ -1,11 +1,11 @@
 <!--desktop-->
-<!--first section is presented the same as mobile-->
+<!--first section is parallax-->
 {% assign section = page.sections | first %}
 <section class="d-none d-md-block primary-section text-center parallax-window"
          data-parallax="scroll"
          data-image-src="{{ section.image }}">
 
-		{% include index/section-contents.html %}
+		{% include index/section-parallax.html %}
 </section>
 
 <!--remaining sections are shown as cards-->
@@ -16,7 +16,7 @@
 
 				{% if forloop.first != true %}
 
-					{% include index/section-contents-card.html %}
+					{% include index/section-card.html %}
 
 				{% endif %}
 			{% endfor %}
@@ -26,42 +26,6 @@
 
 <!--mobile-->
 {% for section in page.sections %}
-	<section class="d-block d-md-none p-0 mobile-section">
-		<div class="carousel-item active">
 
-			<!--slideshow image-->
-			<img class="d-block w-100" src="{{ section.mobile-image }}">
-
-			<div class="carousel-caption h-100 p-0 d-flex flex-column justify-content-center">
-
-				<div>
-					<!--message-->
-					<h4 data-scroll-reveal>{{ section.message }}</h4>
-
-					<!--button-->
-					{% if section.mobile-bottom-color %}
-					{% else %}
-						<div class="mt-3">
-							{% include index/section-button.html %}
-						</div>
-					{% endif %}
-
-				</div>
-			</div>
-		</div>
-
-		{% if section.mobile-bottom-color %}
-			<div class="w-100 py-5 text-center" style="background-color: {{ section.mobile-bottom-color }};">
-
-				<!--second message-->
-				<!--<h4 class="mb-4" style="color: white;">{{ section.message }}</h4>-->
-
-				<!--button-->
-				<div class="my-3">
-					{% include index/section-button.html %}
-				</div>
-			</div>
-		{% endif %}
-
-	</section>
+	{% include index/mobile-section.html %}
 {% endfor %}
