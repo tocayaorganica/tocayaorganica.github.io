@@ -7,8 +7,8 @@ slideshow:
   message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
   message-image: "/uploads/logo-square.png"
   mobile-message-image: "/uploads/logo-rectangle-light.png"
-- message: Try our new <br/> taco salad!
-  slide-image: "/uploads/tocayaSalad-dd4672.jpeg"
+- message: "<b>Try our new <br/> taco salad!</b>"
+  slide-image: "/uploads/tocayaSaladDarker.jpg"
   mobile-slide-image: "/uploads/tocayaSalad.jpeg"
   message-image: 
   mobile-message-image: 
