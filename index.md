@@ -9,7 +9,7 @@ slideshow:
   slide-image: "/uploads/tocayaSaladDarker.jpg"
   message-image: 
 - slide-image: "/uploads/Header.jpg"
-  message: Now Open in Venice, West Hollywood, Miami, Santa Monica and Playa Vista
+  message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
   message-image: "/uploads/logo-square.png"
 mobile-header:
   background-image: "/uploads/HeaderDarker.jpg"
