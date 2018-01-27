@@ -4,7 +4,7 @@
 
 			{% for card in section.cards %}
 
-				<div class="col-lg-6 my-auto">
+				<div class="col-12 col-lg-6 my-auto">
 
 					<!--card-->
 					<div class="card card-shadow-1 text-center mt-5">
@@ -20,11 +20,11 @@
 							<!--button-->
 							<a class="btn btn-primary" href="{{ card.button-link }}">{{ card.button-label}}</a>
 						</div>
-
 					</div>
-				{% endfor %}
 
-			</div>
+				</div>
+			{% endfor %}
+
 		</div>
 	</div>
 </section>
