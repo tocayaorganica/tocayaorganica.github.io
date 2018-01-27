@@ -47,6 +47,15 @@ sections:
     button-link: "/careers/"
     button-white: true
     mobile-bottom-color: "#1c9a70"
+- type: split-screen
+  image-side: left
+  image: "/uploads/Team-b1da38.jpg"
+  message: |-
+    We're changing the world-
+    <br>
+    One taco at a time!
+  button-label: Join Our Team
+  button-link: "/careers/"
 layout: index
 ---
 
