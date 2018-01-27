@@ -1,24 +1,11 @@
-<!--desktop-->
-<!--first section is parallax-->
-{% assign section = page.sections | first %}
-<section class="d-none d-md-block primary-section text-center parallax-window"
-         data-parallax="scroll"
-         data-image-src="{{ section.image }}">
-
-		{% include index/section-parallax.html %}
-</section>
-
 <!--remaining sections are shown as cards-->
 <section class="d-none d-md-block card-section">
 	<div class="container">
 		<div class="row">
 			{% for section in page.sections %}
 
-				{% if forloop.first != true %}
+				{% include index/section-card.html %}
 
-					{% include index/section-card.html %}
-
-				{% endif %}
 			{% endfor %}
 		</div>
 	</div>

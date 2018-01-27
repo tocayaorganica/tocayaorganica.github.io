@@ -2,5 +2,38 @@
 layout: default
 ---
 
-{% include index/slideshow.html %}
-{% include index/sections.html %}
+{% for section in page.sections %}
+
+	<!--switch statement based on section type-->
+	{% case section.type %}
+
+		<!--slideshow-->
+		{% when "slideshow" %}
+
+			{% if forloop.first %}
+				<header>
+			{% else %}
+				<section>
+			{% endif %}
+
+				{% include index/section/slideshow/slideshow.html %}
+
+			{% if forloop.first %}
+			{% else %}
+				</section>
+			{% endif %}
+			{% if forloop.first %}
+				</header>
+			{% endif %}
+
+		<!--parallax-->
+		{% when "parallax" %}
+			{% include index/section/parallax/parallax.html %}
+
+		<!--card-->
+		{% when "cards" %}
+			{% include index/section/card.html %}
+
+	{% endcase %}
+
+{% endfor %}

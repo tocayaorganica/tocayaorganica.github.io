@@ -1,0 +1,22 @@
+<section class="d-none d-md-block primary-section text-center parallax-window"
+         data-parallax="scroll"
+         data-image-src="{{ section.image }}">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+
+				<!--message-->
+				<h2 class="section-heading" data-scroll-reveal>{{ section.message }}</h2>
+
+				<!--button-->
+				<div class="mt-5">
+					{% include index/section-button.html %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include index/section/parallax/mobile-parallax.html %}
