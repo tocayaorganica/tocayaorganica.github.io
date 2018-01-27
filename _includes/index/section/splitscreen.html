@@ -15,18 +15,7 @@
 
 		<!--button-->
 		<div class="mt-5">
-
-			<!--todo move to own include-->
-			<a class="btn" href="{{ section.button-link }}"
-				style="color: {{ section.text-color }};
-						 border-color: {{ section.text-color }};
-						 background-color: {{ section.background-color }};
-                   border-radius: 48px;">
-
-				{{ section.button-label}}
-			</a>
-
-			<!--{% include index/section-button.html %}-->
+			{% include index/section-button.html %}
 		</div>
 
 	</div>

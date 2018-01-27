@@ -1,8 +1,9 @@
-<a class="btn
-	{% if section.button-white == true %} btn-white {% else %} btn-primary {% endif %}
-	primary-section__button"
+<a class="btn btn-styled" href="{{ section.button-link }}"
+   style="color: {{ section.text-color }};
+						 border-color: {{ section.text-color }};
+						 background-color: {{ section.background-color }};">
 
-   href="{{ section.button-link }}">
-
-	{{ section.button-label}}
+	<div class="h-100 d-flex flex-column justify-content-center">
+		<span>{{ section.button-label}}</span>
+	</div>
 </a>
