@@ -16,6 +16,7 @@ sections:
   mobile-slides:
   - slide-image: "/uploads/HeaderDarker.jpg"
     message-image: "/uploads/logo-rectangle-light.png"
+    order-online-button: true
 - type: parallax
   image: "/uploads/City.jpg"
   mobile-image: "/uploads/City-2ed860.jpg"
