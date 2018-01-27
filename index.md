@@ -48,7 +48,7 @@ sections:
     button-white: true
     mobile-bottom-color: "#1c9a70"
 - type: split-screen
-  image-side: right
+  image-side: left
   text-color: "#ffffff"
   background-color: "#1c9a70"
   image: "/uploads/Team-b1da38.jpg"
