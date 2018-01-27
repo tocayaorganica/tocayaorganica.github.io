@@ -1,5 +1,11 @@
 @import "../variables";
 
+section.full-height-section {
+  height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 section.mobile-section .carousel-caption {
   top: 0;
   bottom: unset;
