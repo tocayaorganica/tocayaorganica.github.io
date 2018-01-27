@@ -15,7 +15,22 @@ mobile-header:
   background-image: "/uploads/HeaderDarker.jpg"
   foreground-image: "/uploads/logo-rectangle-light.png"
 sections:
-- image: "/uploads/City.jpg"
+- type: slideshow
+  slides:
+  - message: |-
+      TRY OUR NEW
+      <br>
+      TACO SALAD
+    slide-image: "/uploads/tocayaSaladDarker.jpg"
+  - message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
+    slide-image: "/uploads/Header.jpg"
+    message-image: "/uploads/logo-square.png"
+  - slide-image: 
+  mobile-slides:
+  - slide-image: "/uploads/HeaderDarker.jpg"
+    message-image: "/uploads/logo-rectangle-light.png"
+- type: parallax
+  image: "/uploads/City.jpg"
   mobile-image: "/uploads/City-2ed860.jpg"
   message: |-
     Now Open in
@@ -24,7 +39,8 @@ sections:
   button-label: Find a Location
   button-link: "/locations/"
   mobile-bottom-color: "#f87d68"
-- image: "/uploads/Dining.jpg"
+- type: card
+  image: "/uploads/Dining.jpg"
   mobile-image: "/uploads/menu-mobile.jpg"
   message: |-
     Redefining the health-conscious dining
@@ -32,7 +48,8 @@ sections:
     experience with bold flavors
   button-label: Explore the Menu
   button-link: "/menu"
-- image: "/uploads/Team.jpg"
+- type: card
+  image: "/uploads/Team.jpg"
   mobile-image: "/uploads/Team-b1da38.jpg"
   message: |-
     We're changing the world-
