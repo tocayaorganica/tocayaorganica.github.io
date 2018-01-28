@@ -33,8 +33,8 @@ sections:
   cards:
   - image: "/uploads/Dining.jpg"
     mobile-image: "/uploads/menu-mobile.jpg"
-    background-color: white
-    text-color: black
+    background-color: blue
+    text-color: white
     message: |-
       Redefining the health-conscious dining
       <br>
