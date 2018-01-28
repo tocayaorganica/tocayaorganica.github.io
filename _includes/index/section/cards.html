@@ -12,13 +12,14 @@
 						<!--image-->
 						<img class="card-img-top" src="{{ card.image }}">
 
-						<div class="card-body">
+						<div class="card-body d-flex flex-column justify-content-around"
+							style="background-color: {{ card.background-color }}">
 
 							<!--message-->
-							<p class="card-text text-primary">{{ card.message }}</p>
+							<p class="card-text" style="color: {{ card.text-color }}">{{ card.message }}</p>
 
 							<!--button-->
-							<a class="btn btn-primary" href="{{ card.button-link }}">{{ card.button-label}}</a>
+							{% include index/section-button.html %}
 						</div>
 					</div>
 

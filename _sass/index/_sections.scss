@@ -34,6 +34,16 @@ section.primary-section {
 section.card-section {
   padding-top: 0;
   padding-bottom: 5rem;
+
+  .card {
+    border: none;
+
+    .card-body {
+      height: 14rem;
+      min-height: 14rem;
+      max-height: 14rem;
+    }
+  }
 }
 
 section.mobile-section {

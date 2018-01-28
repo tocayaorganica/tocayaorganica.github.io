@@ -1,12 +1,28 @@
-{% if section.button-label %}
+{% if card.button-label %}
 
-	<a class="btn btn-styled" href="{{ section.button-link }}"
-	   style="color: {{ section.button-text-color }};
-							 border-color: {{ section.button-text-color }};
-							 background-color: {{ section.button-color }};">
+	{% assign tmp-button-label = card.button-label %}
+	{% assign tmp-button-link = card.button-link %}
+	{% assign tmp-button-color = card.button-color %}
+	{% assign tmp-button-text-color = card.button-text-color %}
+
+{% elsif section.button-label %}
+
+	{% assign tmp-button-label = section.button-label %}
+	{% assign tmp-button-link = section.button-link %}
+	{% assign tmp-button-color = section.button-color %}
+	{% assign tmp-button-text-color = section.button-text-color %}
+
+{% endif %}
+
+{% if tmp-button-label %}
+
+	<a class="btn btn-styled mx-auto" href="{{ tmp-button-link }}"
+	   style="color: {{ tmp-button-text-color }};
+				 border-color: {{ tmp-button-text-color }};
+				 background-color: {{ tmp-button-color }};">
 
 		<div class="h-100 d-flex flex-column justify-content-center">
-			<span>{{ section.button-label}}</span>
+			<span>{{ tmp-button-label }}</span>
 		</div>
 	</a>
 {% endif %}
