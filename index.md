@@ -20,6 +20,7 @@ sections:
   image: "/uploads/City.jpg"
   mobile-image: "/uploads/City-2ed860.jpg"
   background-color: "#f87d68"
+  text-color: white
   message: |-
     Now Open in
     <br>
@@ -27,30 +28,38 @@ sections:
   button-label: Find a Location
   button-link: "/locations/"
   button-color: "#986666"
-  button-text-color: "#ffffff"
+  button-text-color: white
 - type: cards
   cards:
   - image: "/uploads/Dining.jpg"
     mobile-image: "/uploads/menu-mobile.jpg"
+    background-color: white
+    text-color: black
     message: |-
       Redefining the health-conscious dining
       <br>
       experience with bold flavors
     button-label: Explore the Menu
     button-link: "/menu/"
+    button-color: "#cccccc"
+    button-text-color: black
   - image: "/uploads/Team.jpg"
     mobile-image: "/uploads/Team-b1da38.jpg"
+    background-color: white
+    text-color: black
     message: |-
-      We're changing the world-
+      Share your experience with us
       <br>
-      One taco at a time!
-    button-label: Join Our Team
-    button-link: "/careers/"
-    button-white: true
-    mobile-bottom-color: "#1c9a70"
+      by using the hashtag <b>#TocayaLife</b>
+      <br>
+      & you could win a $50 gift certificate!
+    button-label: Learn More
+    button-link: "/"
+    button-color: "#cccccc"
+    button-text-color: black
 - type: split-screen
   image-side: left
-  text-color: "#ffffff"
+  text-color: white
   background-color: "#1c9a70"
   image: "/uploads/Team-b1da38.jpg"
   message: |-
