@@ -1,37 +1,39 @@
-<div class="w-100 h-100">
+<section class="full-height-section">
+	<div class="w-100 h-100">
 
-	<!--desktop slideshow-->
-	<div class="d-none d-md-block carousel slide home__carousel"
-	     data-ride="carousel"
-	     data-interval="7000"
-	     data-wrap="true"
-	     data-keyboard="false"
-	     data-pause="false">
+		<!--desktop slideshow-->
+		<div class="d-none d-md-block carousel slide home__carousel"
+		     data-ride="carousel"
+		     data-interval="7000"
+		     data-wrap="true"
+		     data-keyboard="false"
+		     data-pause="false">
 
-		<div class="carousel-inner">
+			<div class="carousel-inner">
 
-			<!--desktop slides-->
-			{% for slide in section.slides %}
-				{% include index/section/slideshow/slide.html %}
-			{% endfor %}
+				<!--desktop slides-->
+				{% for slide in section.slides %}
+					{% include index/section/slideshow/slide.html %}
+				{% endfor %}
+			</div>
 		</div>
-	</div>
 
-	<!--mobile slideshow-->
-	<div class="d-block d-md-none carousel slide home__carousel"
-	     data-ride="carousel"
-	     data-interval="7000"
-	     data-wrap="true"
-	     data-keyboard="false"
-	     data-pause="false">
+		<!--mobile slideshow-->
+		<div class="d-block d-md-none carousel slide home__carousel"
+		     data-ride="carousel"
+		     data-interval="7000"
+		     data-wrap="true"
+		     data-keyboard="false"
+		     data-pause="false">
 
-		<div class="carousel-inner">
+			<div class="carousel-inner">
 
-			<!--mobile slides-->
-			{% for slide in section.mobile-slides %}
-				{% include index/section/slideshow/slide.html %}
-			{% endfor %}
+				<!--mobile slides-->
+				{% for slide in section.mobile-slides %}
+					{% include index/section/slideshow/slide.html %}
+				{% endfor %}
+			</div>
 		</div>
-	</div>
 
-</div>
+	</div>
+</section>

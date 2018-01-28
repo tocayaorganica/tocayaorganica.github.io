@@ -9,22 +9,7 @@ layout: default
 
 		<!--slideshow-->
 		{% when "slideshow" %}
-
-			{% if forloop.first %}
-				<header>
-			{% else %}
-				<section class="full-height-section">
-			{% endif %}
-
-				{% include index/section/slideshow/slideshow.html %}
-
-			{% if forloop.first %}
-			{% else %}
-				</section>
-			{% endif %}
-			{% if forloop.first %}
-				</header>
-			{% endif %}
+			{% include index/section/slideshow/slideshow.html %}
 
 		<!--parallax-->
 		{% when "parallax" %}

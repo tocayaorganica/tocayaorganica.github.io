@@ -1,9 +1,12 @@
-<a class="btn btn-styled" href="{{ section.button-link }}"
-   style="color: {{ section.text-color }};
-						 border-color: {{ section.text-color }};
-						 background-color: {{ section.background-color }};">
+{% if section.button-label %}
 
-	<div class="h-100 d-flex flex-column justify-content-center">
-		<span>{{ section.button-label}}</span>
-	</div>
-</a>
+	<a class="btn btn-styled" href="{{ section.button-link }}"
+	   style="color: {{ section.button-text-color }};
+							 border-color: {{ section.button-text-color }};
+							 background-color: {{ section.button-color }};">
+
+		<div class="h-100 d-flex flex-column justify-content-center">
+			<span>{{ section.button-label}}</span>
+		</div>
+	</a>
+{% endif %}

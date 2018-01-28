@@ -31,4 +31,8 @@ body {
   border-radius: 48px;
   width: 16rem;
   height: 3rem;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
