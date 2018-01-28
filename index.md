@@ -68,6 +68,8 @@ sections:
     One taco at a time!
   button-label: Join Our Team
   button-link: "/careers/"
+  button-color: "#1c9a70"
+  button-text-color: white
 layout: index
 ---
 
