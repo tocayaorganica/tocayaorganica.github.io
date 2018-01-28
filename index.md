@@ -12,7 +12,6 @@ sections:
   - message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
     slide-image: "/uploads/Header.jpg"
     message-image: "/uploads/logo-square.png"
-  - slide-image: 
   mobile-slides:
   - slide-image: "/uploads/HeaderDarker.jpg"
     message-image: "/uploads/logo-rectangle-light.png"
@@ -20,13 +19,15 @@ sections:
 - type: parallax
   image: "/uploads/City.jpg"
   mobile-image: "/uploads/City-2ed860.jpg"
+  background-color: "#f87d68"
   message: |-
     Now Open in
     <br>
     Century City!
   button-label: Find a Location
   button-link: "/locations/"
-  mobile-bottom-color: "#f87d68"
+  button-color: "#986666"
+  button-text-color: "#ffffff"
 - type: cards
   cards:
   - image: "/uploads/Dining.jpg"
