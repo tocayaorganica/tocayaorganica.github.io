@@ -27,7 +27,7 @@ sections:
     Century City!
   button-label: Find a Location
   button-link: "/locations/"
-  button-color: "#986666"
+  button-color: "#333333"
   button-text-color: white
 - type: cards
   cards:
