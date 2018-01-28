@@ -21,11 +21,8 @@ sections:
   mobile-image: "/uploads/City-2ed860.jpg"
   background-color: "#f87d68"
   text-color: white
-  message: |-
-    Now Open in
-    <br>
-    Century City!
-  button-label: Find a Location
+  message: Now Open in Century City!
+  button-label: See Locations
   button-link: "/locations/"
   button-color: "#333333"
   button-text-color: white
