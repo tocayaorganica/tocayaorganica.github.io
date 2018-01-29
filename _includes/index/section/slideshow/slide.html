@@ -1,9 +1,9 @@
 <div class="carousel-item h-100 {% if forloop.first %}active{% endif %}">
 
 	<!--slideshow image-->
-	<img class="h-100" src="{{ slide.slide-image }}">
+	<img class="h-100 w-100" src="{{ slide.slide-image }}" style="object-fit: cover;">
 
-	<div class="carousel-caption">
+	<div class="carousel-caption h-50">
 
 		<!--foreground image-->
 		<div class="row">
@@ -24,14 +24,20 @@
 		{% endif %}
 
 		<!--message-->
-		<div class="row {{ tmp-align-classes }}">
-			<div class="d-flex flex-column">
+		<div class="row h-100 {{ tmp-align-classes }}">
+			<div class="h-100 d-flex flex-column justify-content-between justify-content-md-around">
 
 				<!--message-->
+				<div>
 				{% include index/section/message.html %}
+				</div>
 
 				<!--button-->
-				<div>
+				<div class="d-none d-md-block">
+					{% include index/section/button.html %}
+				</div>
+
+				<div class="d-block d-md-none text-center">
 					{% include index/section/button.html %}
 				</div>
 			</div>
