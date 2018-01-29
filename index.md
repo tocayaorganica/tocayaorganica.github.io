@@ -67,7 +67,7 @@ sections:
     <br>
     One taco at a time!
   message-size: 2rem
-  mobile-message-size: 2.5rem
+  mobile-message-size: 1.5rem
   message-animation: true
   button-label: Join Our Team
   button-link: "/careers/"
