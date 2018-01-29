@@ -24,7 +24,6 @@ sections:
     message-align: center
 - type: parallax
   image: "/uploads/City.jpg"
-  mobile-image: "/uploads/City-2ed860.jpg"
   background-color: "#b88878"
   text-color: white
   message: Now Open in Century City!
@@ -39,7 +38,6 @@ sections:
   cards:
   - mobile-type: split-screen
     image: "/uploads/Dining.jpg"
-    mobile-image: "/uploads/menu-mobile.jpg"
     background-color: white
     text-color: black
     message: |-
@@ -52,7 +50,6 @@ sections:
     button-text-color: black
   - mobile-type: slideshow
     image: "/uploads/Team.jpg"
-    mobile-image: "/uploads/Team-b1da38.jpg"
     background-color: white
     text-color: black
     message: |-
