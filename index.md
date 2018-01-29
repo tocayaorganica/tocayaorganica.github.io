@@ -37,7 +37,8 @@ sections:
   button-text-color: white
 - type: cards
   cards:
-  - image: "/uploads/Dining.jpg"
+  - mobile-type: splitscreen
+    image: "/uploads/Dining.jpg"
     mobile-image: "/uploads/menu-mobile.jpg"
     background-color: white
     text-color: black
@@ -49,7 +50,8 @@ sections:
     button-link: "/menu/"
     button-color: "#cccccc"
     button-text-color: black
-  - image: "/uploads/Team.jpg"
+  - mobile-type: slideshow
+    image: "/uploads/Team.jpg"
     mobile-image: "/uploads/Team-b1da38.jpg"
     background-color: white
     text-color: black
