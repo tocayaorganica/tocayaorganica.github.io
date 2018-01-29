@@ -66,6 +66,9 @@ sections:
     We're changing the world-
     <br>
     One taco at a time!
+  message-size: 3rem
+  mobile-message-size: 2.5rem
+  message-animation: true
   button-label: Join Our Team
   button-link: "/careers/"
   button-color: "#1c9a70"
