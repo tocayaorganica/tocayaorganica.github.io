@@ -1,4 +1,11 @@
-{% if card.button-label %}
+{% if slide.button-label %}
+
+	{% assign tmp-button-label = slide.button-label %}
+	{% assign tmp-button-link = slide.button-link %}
+	{% assign tmp-button-color = slide.button-color %}
+	{% assign tmp-button-text-color = slide.button-text-color %}
+
+{% elsif card.button-label %}
 
 	{% assign tmp-button-label = card.button-label %}
 	{% assign tmp-button-link = card.button-link %}
@@ -26,3 +33,8 @@
 		</div>
 	</a>
 {% endif %}
+
+{% assign tmp-button-label = "" %}
+{% assign tmp-button-link = "" %}
+{% assign tmp-button-color = "" %}
+{% assign tmp-button-text-color = "" %}

@@ -28,9 +28,11 @@ body {
 }
 
 .btn-styled {
+  font-weight: 300;
+  border-width: .1rem;
   border-radius: 48px;
-  width: 16rem;
-  height: 3rem;
+  width: 12rem;
+  height: 2.5rem;
 
   &:hover {
     opacity: 0.8;

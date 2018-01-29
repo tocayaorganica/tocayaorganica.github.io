@@ -69,16 +69,11 @@
 }
 
 @mixin body-font {
-    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 @mixin alt-font {
     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-@mixin alt-font-2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
 }

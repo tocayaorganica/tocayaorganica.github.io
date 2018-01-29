@@ -2,14 +2,14 @@
 	<div class="w-100 h-100">
 
 		<!--desktop slideshow-->
-		<div class="d-none d-md-block carousel slide home__carousel"
+		<div class="d-none d-md-block carousel slide h-100"
 		     data-ride="carousel"
 		     data-interval="7000"
 		     data-wrap="true"
 		     data-keyboard="false"
 		     data-pause="false">
 
-			<div class="carousel-inner">
+			<div class="carousel-inner h-100">
 
 				<!--desktop slides-->
 				{% for slide in section.slides %}
@@ -19,7 +19,7 @@
 		</div>
 
 		<!--mobile slideshow-->
-		<div class="d-block d-md-none carousel slide home__carousel"
+		<div class="d-block d-md-none carousel slide"
 		     data-ride="carousel"
 		     data-interval="7000"
 		     data-wrap="true"

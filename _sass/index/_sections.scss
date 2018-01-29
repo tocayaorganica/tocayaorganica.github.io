@@ -1,16 +1,30 @@
-@import "../mixins";
 @import "../variables";
 
 section.full-height-section {
   padding-top: 0;
   padding-bottom: 0;
 
-  .message {
-    @include heading-font;
+  mark {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
   }
 
   .cover-image {
     background-size: cover;
+  }
+
+  .message {
+    font-weight: 300;
+  }
+
+  // slideshow
+  .carousel-caption {
+    bottom: unset;
+    top: 25%;
+
+    .message {
+
+    }
   }
 
   // parallax
@@ -23,6 +37,10 @@ section.full-height-section {
     background-size: cover;
     position: relative;
     padding: 150px 0;
+
+    // to minimize the parallax jumpiness
+    border-top: 10px solid $seashell;
+    border-bottom: 10px solid $seashell;
   }
 
   // cards
