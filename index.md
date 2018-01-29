@@ -5,10 +5,14 @@ sections:
 - type: slideshow
   slides:
   - message: |-
-      TRY OUR NEW
+      Introducing our new
       <br>
-      TACO SALAD
+      Tocaya Salad
     slide-image: "/uploads/tocayaSaladDarker.jpg"
+    text-align: left
+    text-shadow: true
+    message-size: 3rem
+    message-animation: true
   - message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
     slide-image: "/uploads/Header.jpg"
     message-image: "/uploads/logo-square.png"
