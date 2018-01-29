@@ -63,9 +63,9 @@ sections:
   background-color: "#1c9a70"
   image: "/uploads/Team-b1da38.jpg"
   message: |-
-    We're changing the world-
+    We're changing the world
     <br>
-    One taco at a time!
+    one taco at a time!
   message-size: 2rem
   mobile-message-size: 1.5rem
   message-animation: true
