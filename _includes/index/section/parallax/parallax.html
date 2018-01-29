@@ -3,20 +3,18 @@
          data-image-src="{{ section.image }}">
 
 	<div class="container h-100 d-flex flex-column justify-content-center">
-		<div class="row">
-			<div class="col-md-8 mx-auto">
+		<div class="mx-auto">
 
-				<!--message-->
-				{% include index/section/message.html %}
+			<!--message-->
+			{% include index/section/message.html %}
 
-				<!--button-->
-				<div class="mt-3">
-					{% include index/section-button.html %}
-				</div>
-
+			<!--button-->
+			<div class="mt-3">
+				{% include index/section/section-button.html %}
 			</div>
+
 		</div>
 	</div>
 </section>
 
-{% include index/section/parallax/mobile-parallax.html %}
+{% include index/section/splitscreen/mobile-splitscreen.html %}

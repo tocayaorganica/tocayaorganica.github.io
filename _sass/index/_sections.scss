@@ -4,56 +4,38 @@ section.full-height-section {
   padding-top: 0;
   padding-bottom: 0;
 
+  .cover-image {
+    background-size: cover;
+  }
+
+  // parallax
   &:not(.parallax-window) {
     background-color: $seashell;
   }
 
+  &.parallax-window {
+
+    background-size: cover;
+    position: relative;
+    padding: 150px 0;
+  }
+
+  // cards
   &:not(.card-section) {
     height: 100vh;
   }
 
   &.card-section {
     min-height: 100vh;
-  }
-}
 
-section.mobile-section .carousel-caption {
-  top: 0;
-  bottom: unset;
-}
+    .card {
+      border: none;
 
-section.parallax-window {
-
-  background-size: cover;
-  color: white;
-
-  position: relative;
-  padding: 150px 0;
-
-  h2 {
-    font-size: 70px;
-    margin-top: 0;
-  }
-}
-
-section.card-section {
-  padding-top: 0;
-  padding-bottom: 5rem;
-
-  .card {
-    border: none;
-
-    .card-body {
-      height: 14rem;
-      min-height: 14rem;
-      max-height: 14rem;
+      .card-body {
+        height: 14rem;
+        min-height: 14rem;
+        max-height: 14rem;
+      }
     }
-  }
-}
-
-section.mobile-section {
-
-  .mobile-section__bottom-half {
-    color: white;
   }
 }

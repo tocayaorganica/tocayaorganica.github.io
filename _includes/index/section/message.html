@@ -1,20 +1,31 @@
 {% if card.message %}
 
 	{% assign tmp-message = card.message %}
+	{% assign tmp-message-color = card.text-color %}
 	{% assign tmp-message-size = card.message-size %}
+	{% assign tmp-mobile-message-size = section.mobile-message-size %}
 	{% assign tmp-message-animation = card.message-animation %}
 
 {% elsif section.message %}
 
 	{% assign tmp-message = section.message %}
+	{% assign tmp-message-color = section.text-color %}
 	{% assign tmp-message-size = section.message-size %}
+	{% assign tmp-mobile-message-size = section.mobile-message-size %}
 	{% assign tmp-message-animation = section.message-animation %}
 
 {% endif %}
 
 {% if tmp-message %}
-	<p {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
-	   {% if tmp-message-size %}style="font-size: {{ tmp-message-size }};"{% endif %}>
-		{{ tmp-message }}
-	</p>
+	<div style="color: {{ tmp-message-color }}">
+		<p class="d-none d-md-block" {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
+		   {% if tmp-message-size %}style="font-size: {{ tmp-message-size }};" {% endif %}>
+			{{ tmp-message }}
+		</p>
+
+		<p class="d-block d-md-none" {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
+		   {% if tmp-mobile-message-size %}style="font-size: {{ tmp-mobile-message-size }};"{% endif %}>
+			{{ tmp-message }}
+		</p>
+	</div>
 {% endif %}

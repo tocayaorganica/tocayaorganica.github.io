@@ -1,0 +1,36 @@
+<section class="d-block d-md-none full-height-section">
+
+	<!--image-->
+	{% if card.mobile-image %}
+		{% assign tmp-image = card.mobile-image %}
+	{% elsif card.image %}
+		{% assign tmp-image = card.image %}
+	{% elsif section.mobile-image %}
+		{% assign tmp-image = section.mobile-image %}
+	{% else %}
+		{% assign tmp-image = section.image %}
+	{% endif %}
+
+	<div class="h-50 cover-image" style="background-image: url({{ tmp-image }});"></div>
+
+	{% if card.background-color %}
+		{% assign tmp-background-color = card.background-color %}
+	{% else %}
+		{% assign tmp-background-color = section.background-color %}
+	{% endif %}
+
+	<div class="h-50 d-flex flex-column justify-content-center"
+		style="background-color: {{ tmp-background-color }};">
+		<div class="mx-auto text-center">
+
+			<!--message-->
+			{% include index/section/message.html %}
+
+			<!--button-->
+			<div class="mt-5">
+				{% include index/section/section-button.html %}
+			</div>
+
+		</div>
+	</div>
+</section>

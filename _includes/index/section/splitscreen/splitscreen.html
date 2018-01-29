@@ -1,0 +1,33 @@
+<section class="d-none d-md-block full-height-section text-center">
+	<div class="row h-100">
+
+		<!--left image-->
+		{% if section.image-side == "left" %}
+			<div class="col-6 h-100 cover-image" style="background-image: url({{ section.image }});"></div>
+		{% endif %}
+
+		<!--color section with text-->
+		<div class="col-6 h-100 mx-auto d-flex flex-column justify-content-center"
+		     style="color: {{ section.text-color }}; background-color: {{ section.background-color }}">
+
+			<div>
+				<!--message-->
+				{% include index/section/message.html %}
+
+				<!--button-->
+				<div class="mt-5">
+					{% include index/section/section-button.html %}
+				</div>
+			</div>
+		</div>
+
+		<!--right image-->
+		{% if section.image-side == "left" %}
+		{% else %}
+			<div class="col-6 h-100 cover-image" style="background-image: url({{ section.image }});"></div>
+		{% endif %}
+
+	</div>
+</section>
+
+{% include index/section/splitscreen/mobile-splitscreen.html %}
