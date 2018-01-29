@@ -9,7 +9,7 @@ sections:
       <br>
       Tocaya Salad
     slide-image: "/uploads/tocayaSaladDarker.jpg"
-    text-align: left
+    message-align: left
     message-highlight: true
     message-size: 3rem
     message-animation: true
