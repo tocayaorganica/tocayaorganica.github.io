@@ -1,0 +1,20 @@
+{% if card.message %}
+
+	{% assign tmp-message = card.message %}
+	{% assign tmp-message-size = card.message-size %}
+	{% assign tmp-message-animation = card.message-animation %}
+
+{% elsif section.message %}
+
+	{% assign tmp-message = section.message %}
+	{% assign tmp-message-size = section.message-size %}
+	{% assign tmp-message-animation = section.message-animation %}
+
+{% endif %}
+
+{% if tmp-message %}
+	<p {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
+	   {% if tmp-message-size %}style="font-size: {{ tmp-message-size }};"{% endif %}>
+		{{ tmp-message }}
+	</p>
+{% endif %}
