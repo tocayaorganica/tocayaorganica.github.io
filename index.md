@@ -20,6 +20,7 @@ sections:
   - message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
     slide-image: "/uploads/Header.jpg"
     message-image: "/uploads/logo-square.png"
+    message-align: center
   mobile-slides:
   - slide-image: "/uploads/HeaderDarker.jpg"
     message-image: "/uploads/logo-rectangle-light.png"
