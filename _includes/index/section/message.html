@@ -1,6 +1,7 @@
 {% if slide.message %}
 
 	{% assign tmp-message = slide.message %}
+	{% assign tmp-mobile-hide-message = slide.mobile-hide-message %}
 	{% assign tmp-message-color = slide.text-color %}
 	{% assign tmp-message-size = slide.message-size %}
 	{% assign tmp-mobile-message-size = slide.mobile-message-size %}
@@ -10,15 +11,17 @@
 {% elsif card.message %}
 
 	{% assign tmp-message = card.message %}
+	{% assign tmp-mobile-hide-message = card.mobile-hide-message %}
 	{% assign tmp-message-color = card.text-color %}
 	{% assign tmp-message-size = card.message-size %}
-	{% assign tmp-mobile-message-size = section.mobile-message-size %}
+	{% assign tmp-mobile-message-size = card.mobile-message-size %}
 	{% assign tmp-message-animation = card.message-animation %}
 	{% assign tmp-message-highlight = card.message-highlight %}
 
 {% elsif section.message %}
 
 	{% assign tmp-message = section.message %}
+	{% assign tmp-mobile-hide-message = section.mobile-hide-message %}
 	{% assign tmp-message-color = section.text-color %}
 	{% assign tmp-message-size = section.message-size %}
 	{% assign tmp-mobile-message-size = section.mobile-message-size %}
@@ -28,7 +31,10 @@
 {% endif %}
 
 {% if tmp-message %}
+
 	<div class="message" {% if tmp-message-color %}style="color: {{ tmp-message-color }}"{% endif %}>
+
+		<!--desktop-->
 		<p class="d-none d-md-block" {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
 		   {% if tmp-message-size %}style="font-size: {{ tmp-message-size }};" {% endif %}>
 
@@ -44,23 +50,28 @@
 			{% endif %}
 		</p>
 
-		<p class="d-block d-md-none" {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
-		   {% if tmp-mobile-message-size %}style="font-size: {{ tmp-mobile-message-size }};"{% endif %}>
+		<!--mobile-->
+		{% if tmp-mobile-hide-message == true %}
+		{% else %}
+			<p class="d-block d-md-none" {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
+			   {% if tmp-mobile-message-size %}style="font-size: {{ tmp-mobile-message-size }};"{% endif %}>
 
-			{% if tmp-message-highlight %}
-				<mark>
-			{% endif %}
+				{% if tmp-message-highlight %}
+					<mark>
+				{% endif %}
 
-				{{ tmp-message }}
+					{{ tmp-message }}
 
-			{% if tmp-message-highlight %}
-				</mark>
-			{% endif %}
-		</p>
+				{% if tmp-message-highlight %}
+					</mark>
+				{% endif %}
+			</p>
+		{% endif %}
 	</div>
 {% endif %}
 
 {% assign tmp-message = "" %}
+{% assign tmp-mobile-hide-message = "" %}
 {% assign tmp-message-color = "" %}
 {% assign tmp-message-size = "" %}
 {% assign tmp-mobile-message-size = "" %}

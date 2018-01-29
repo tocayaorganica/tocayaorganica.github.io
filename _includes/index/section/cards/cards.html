@@ -1,3 +1,4 @@
+<!--desktop-->
 <section class="d-none d-md-block full-height-section card-section">
 	<div class="container">
 		<div class="row mb-5 mb-lg-0">
@@ -29,3 +30,38 @@
 		</div>
 	</div>
 </section>
+
+<!--mobile-->
+{% for card in section.cards %}
+
+	{% case card.mobile-type %}
+
+		<!--slideshow-->
+		{% when "slideshow" %}
+			<section class="d-block d-md-none full-height-section">
+				<div class="w-100 h-100">
+
+					<!--desktop slideshow-->
+					<div class="carousel slide h-100">
+						<div class="carousel-inner h-100">
+
+							<!--desktop slides-->
+							<div class="carousel-item h-100 active">
+								{% include index/section/slideshow/slide.html %}
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+		<!--parallax-->
+		{% when "parallax" %}
+			{% include index/section/splitscreen/mobile-splitscreen.html %}
+
+		<!--splitscreen-->
+		{% when "split-screen" %}
+			{% include index/section/splitscreen/mobile-splitscreen.html %}
+
+	{% endcase %}
+{% endfor %}

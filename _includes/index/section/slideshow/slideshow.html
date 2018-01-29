@@ -1,7 +1,6 @@
 <section class="full-height-section">
 	<div class="w-100 h-100">
 
-		<!--desktop slideshow-->
 		<div class="carousel slide h-100"
 		     data-ride="carousel"
 		     data-interval="7000"
@@ -10,10 +9,11 @@
 		     data-pause="false">
 
 			<div class="carousel-inner h-100">
-
-				<!--desktop slides-->
 				{% for slide in section.slides %}
-					{% include index/section/slideshow/slide.html %}
+
+					<div class="carousel-item h-100 {% if forloop.first %}active{% endif %}">
+						{% include index/section/slideshow/slide.html %}
+					</div>
 				{% endfor %}
 			</div>
 		</div>

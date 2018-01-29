@@ -1,47 +1,58 @@
-<div class="carousel-item h-100 {% if forloop.first %}active{% endif %}">
+{% if card.image %}
+	{% assign tmp-slide-image = card.image %}
+	{% assign tmp-slide-message-image = card.message-image %}
 
-	<!--slideshow image-->
-	<img class="h-100 w-100" src="{{ slide.slide-image }}" style="object-fit: cover;">
+{% elsif slide.image %}
+	{% assign tmp-slide-image = slide.image %}
+	{% assign tmp-slide-message-image = slide.message-image %}
 
-	<div class="carousel-caption h-50">
+{% endif %}
 
-		<!--foreground image-->
-		<div class="row">
-			<div class="col-12 col-md-4 mx-auto">
+<!--slideshow image-->
+<img class="h-100 w-100 cover-image" src="{{ tmp-slide-image }}">
 
-				{% if slide.message-image %}
-					<img class="w-100" src="{{ slide.message-image }}">
-				{% endif %}
-			</div>
+<div class="carousel-caption h-50">
+
+	<!--foreground image-->
+	<div class="row">
+		<div class="col-12 col-md-4 mx-auto">
+
+			{% if tmp-slide-message-image %}
+				<img class="w-100" src="{{ tmp-slide-message-image }}">
+			{% endif %}
 		</div>
-
-		{% if slide.message-align == "left" %}
-			{% assign tmp-align-classes = "justify-content-start text-left" %}
-		{% elsif slide.message-align == "right" %}
-			{% assign tmp-align-classes = "justify-content-end text-right" %}
-		{% else %}
-			{% assign tmp-align-classes = "justify-content-center text-center" %}
-		{% endif %}
-
-		<!--message-->
-		<div class="row h-100 {{ tmp-align-classes }}">
-			<div class="h-100 d-flex flex-column justify-content-between justify-content-md-around">
-
-				<!--message-->
-				<div>
-				{% include index/section/message.html %}
-				</div>
-
-				<!--button-->
-				<div class="d-none d-md-block">
-					{% include index/section/button.html %}
-				</div>
-
-				<div class="d-block d-md-none text-center">
-					{% include index/section/button.html %}
-				</div>
-			</div>
-		</div>
-
 	</div>
+
+	{% if slide.message-align == "left" %}
+		{% assign tmp-align-classes = "justify-content-start text-left" %}
+	{% elsif slide.message-align == "right" %}
+		{% assign tmp-align-classes = "justify-content-end text-right" %}
+	{% else %}
+		{% assign tmp-align-classes = "justify-content-center text-center" %}
+	{% endif %}
+
+	<!--message-->
+	<div class="row h-100 {{ tmp-align-classes }}">
+		<div class="h-100 d-flex flex-column justify-content-between justify-content-md-around">
+
+			<!--message-->
+			<div>
+				{% include index/section/message.html %}
+			</div>
+
+			<!--button-->
+			<div class="d-none d-md-block">
+				{% include index/section/button.html %}
+			</div>
+
+			<div class="d-block d-md-none text-center">
+				{% include index/section/button.html %}
+			</div>
+		</div>
+	</div>
+
 </div>
+
+{% assign tmp-slide-image = "" %}
+{% assign tmp-slide-message-image = "" %}
+{% assign tmp-align-classes = "" %}

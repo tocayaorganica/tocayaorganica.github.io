@@ -1,17 +1,15 @@
 <section class="d-block d-md-none full-height-section">
 
 	<!--image-->
-	{% if card.mobile-image %}
-		{% assign tmp-image = card.mobile-image %}
-	{% elsif card.image %}
+	{% if card.image %}
 		{% assign tmp-image = card.image %}
-	{% elsif section.mobile-image %}
-		{% assign tmp-image = section.mobile-image %}
 	{% else %}
 		{% assign tmp-image = section.image %}
 	{% endif %}
 
-	<div class="h-50 cover-image" style="background-image: url({{ tmp-image }});"></div>
+	<div class="h-50">
+		<img class="h-100 w-100 cover-image" src="{{ tmp-image }}">
+	</div>
 
 	{% if card.background-color %}
 		{% assign tmp-background-color = card.background-color %}
@@ -34,3 +32,6 @@
 		</div>
 	</div>
 </section>
+
+{% assign tmp-image = "" %}
+{% assign tmp-background-color = "" %}

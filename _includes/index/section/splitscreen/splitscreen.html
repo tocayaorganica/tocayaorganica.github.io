@@ -3,7 +3,9 @@
 
 		<!--left image-->
 		{% if section.image-side == "left" %}
-			<div class="col-6 h-100 cover-image" style="background-image: url({{ section.image }});"></div>
+			<div class="col-6 h-100 p-0">
+				<img class="h-100 w-100 cover-image" src="{{ section.image }}">
+			</div>
 		{% endif %}
 
 		<!--color section with text-->
@@ -24,7 +26,9 @@
 		<!--right image-->
 		{% if section.image-side == "left" %}
 		{% else %}
-			<div class="col-6 h-100 cover-image" style="background-image: url({{ section.image }});"></div>
+			<div class="col-6 h-100 p-0">
+				<img class="h-100 w-100 cover-image" src="{{ section.image }}">
+			</div>
 		{% endif %}
 
 	</div>
