@@ -8,7 +8,7 @@ sections:
       Introducing our new
       <br>
       Tocaya Salad
-    slide-image: "/uploads/tocayaSaladDarker.jpg"
+    image: "/uploads/tocayaSaladDarker.jpg"
     message-align: left
     message-highlight: true
     message-size: 3rem
@@ -19,7 +19,7 @@ sections:
     button-color: "#1c9a70"
     button-text-color: white
   - message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
-    slide-image: "/uploads/Header.jpg"
+    image: "/uploads/Header.jpg"
     message-image: "/uploads/logo-square.png"
     message-align: center
 - type: parallax
