@@ -22,6 +22,7 @@ sections:
   background-color: "#f87d68"
   text-color: white
   message: Now Open in Century City!
+  message-size: 3rem
   button-label: See Locations
   button-link: "/locations/"
   button-color: "#333333"
