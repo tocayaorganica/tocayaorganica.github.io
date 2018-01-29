@@ -58,6 +58,7 @@ sections:
       by using the hashtag <b>#TocayaLife</b>
       <br>
       & you could win a $50 gift certificate!
+    mobile-hide-message: true
     button-label: Learn More
     button-link: "/"
     button-color: "#cccccc"
