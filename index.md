@@ -12,6 +12,7 @@ sections:
     message-align: left
     message-highlight: true
     message-size: 3rem
+    mobile-message-size: 2rem
     message-animation: true
     button-label: Order Online
     button-link: https://ordering.chownow.com/order/6779/locations
@@ -21,10 +22,6 @@ sections:
     slide-image: "/uploads/Header.jpg"
     message-image: "/uploads/logo-square.png"
     message-align: center
-  mobile-slides:
-  - slide-image: "/uploads/HeaderDarker.jpg"
-    message-image: "/uploads/logo-rectangle-light.png"
-    order-online-button: true
 - type: parallax
   image: "/uploads/City.jpg"
   mobile-image: "/uploads/City-2ed860.jpg"
