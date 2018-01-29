@@ -19,7 +19,7 @@ sections:
 - type: parallax
   image: "/uploads/City.jpg"
   mobile-image: "/uploads/City-2ed860.jpg"
-  background-color: "#f87d68"
+  background-color: "#b88878"
   text-color: white
   message: Now Open in Century City!
   message-size: 3rem
