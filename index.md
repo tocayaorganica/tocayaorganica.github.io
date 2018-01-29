@@ -66,7 +66,7 @@ sections:
     We're changing the world-
     <br>
     One taco at a time!
-  message-size: 3rem
+  message-size: 2rem
   mobile-message-size: 2.5rem
   message-animation: true
   button-label: Join Our Team
