@@ -13,6 +13,10 @@ sections:
     message-highlight: true
     message-size: 3rem
     message-animation: true
+    button-label: Order Online
+    button-link: https://ordering.chownow.com/order/6779/locations
+    button-color: "#1c9a70"
+    button-text-color: white
   - message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
     slide-image: "/uploads/Header.jpg"
     message-image: "/uploads/logo-square.png"
