@@ -1,8 +1,13 @@
+@import "../mixins";
 @import "../variables";
 
 section.full-height-section {
   padding-top: 0;
   padding-bottom: 0;
+
+  .message {
+    @include heading-font;
+  }
 
   .cover-image {
     background-size: cover;

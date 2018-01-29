@@ -17,7 +17,7 @@
 {% endif %}
 
 {% if tmp-message %}
-	<div style="color: {{ tmp-message-color }}">
+	<div class="message" style="color: {{ tmp-message-color }}">
 		<p class="d-none d-md-block" {% if tmp-message-animation == true %}data-scroll-reveal{% endif %}
 		   {% if tmp-message-size %}style="font-size: {{ tmp-message-size }};" {% endif %}>
 			{{ tmp-message }}
