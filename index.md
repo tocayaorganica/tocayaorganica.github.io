@@ -10,7 +10,7 @@ sections:
       Tocaya Salad
     slide-image: "/uploads/tocayaSaladDarker.jpg"
     message-align: left
-    message-highlight: true
+    message-highlight: false
     message-size: 3rem
     message-animation: true
   - message: Now Open in Venice, West Hollywood, Santa Monica and Playa Vista
