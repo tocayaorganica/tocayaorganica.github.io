@@ -37,7 +37,7 @@ sections:
   button-text-color: white
 - type: cards
   cards:
-  - mobile-type: splitscreen
+  - mobile-type: split-screen
     image: "/uploads/Dining.jpg"
     mobile-image: "/uploads/menu-mobile.jpg"
     background-color: white
