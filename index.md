@@ -26,7 +26,7 @@ sections:
   image: "/uploads/City.jpg"
   background-color: "#b88878"
   text-color: white
-  message: Now Open in Century City!
+  message: Now Open in <br> Century City!
   message-size: 3rem
   mobile-message-size: 2rem
   message-animation: true
