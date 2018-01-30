@@ -28,7 +28,7 @@ sections:
   text-color: white
   message: Now Open in Century City!
   message-size: 3rem
-  mobile-message-size: 2.5rem
+  mobile-message-size: 2rem
   message-animation: true
   button-label: See Locations
   button-link: "/locations/"
