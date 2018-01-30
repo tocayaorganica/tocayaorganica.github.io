@@ -23,7 +23,7 @@ sections:
     message-image: "/uploads/logo-square.png"
     message-align: center
 - type: parallax
-  image: "/uploads/City.jpg"
+  image: "/uploads/CitySmaller.jpg"
   background-color: "#b88878"
   text-color: white
   message: |-
