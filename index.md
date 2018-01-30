@@ -52,7 +52,7 @@ sections:
     button-color: "#cccccc"
     button-text-color: black
   - mobile-type: slideshow
-    image: "/uploads/Team.jpg"
+    image: "/uploads/IMG_0195%20copy.png"
     background-color: white
     text-color: black
     message: |-
